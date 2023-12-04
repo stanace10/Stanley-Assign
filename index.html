@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <title> Stanley's Portfolio </title>
+    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+    <link href="assets/libs/%40iconscout/unicons/css/line.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body class=" text-base text-indigo-600  bg-[#ecf0f3]">
+<!-- My Navbar -->
+<nav id="topnav" class="defaultscroll is-sticky">
+    <div class="container">
+        <a class="logo pl-0" href="index.html">
+            <img src="assets/images/ac%20logo.png" class="inline-block dark:hidden w-14" alt="">
+            <img src="assets/images/ac%20logo.png" class="hidden dark:inline-block w-14" alt="">
+        </a>
+        <!-- End Logo container-->
+        <div class="menu-extras">
+            <div class="menu-item">
+                <!-- Mobile menu toggle-->
+                <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+                <!-- End mobile menu toggle-->
+            </div>
+        </div>
+
+        <!--Login button Start-->
+        <ul class="buy-button list-none mb-0">
+            <li class="inline mb-0">
+                <a href="#"
+                   class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white">
+
+                    <i class="uil uil-facebook-f"></i></a>
+            </li>
+
+            <li class="inline pl-1 mb-0">
+                <a href="#"
+                   class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white">
+
+                    <i class="uil uil-youtube"></i></a>
+            </li>
+        </ul>
+
+
+        <div id="navigation">
+            <!-- Navigation Menu-->
+            <ul class="navigation-menu">
+                <li><a href="#" class="sub-menu-item">Home</a></li>
+
+                <li>
+                    <a href="#" class="sub-menu-item">ABOUT ME</a>
+                </li>
+                <li>
+                    <a href="#" class="sub-menu-item">SERVICES</a>
+                </li>
+                <li>
+                    <a href="#" class="sub-menu-item">PORTFOLIO</a>
+                </li>
+
+                <li>
+                    <a href="#" class="sub-menu-item">BLOGS</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+<!-
+<section
+        class="md:h-screen py-36 h-auto relative bg-[#ecf0f3] flex items-center background-effect overflow-hidden z[-1]
+            before:content-[''] before:absolute before:z-[1] sm:before:-bottom-80 before:-bottom-40 before:right-36 before:left-0 before:mx-auto before:rounded-full before:bg-indigo-600 sm:before:w-[50rem] before:w-[30rem] sm:before:h-[50rem] before:h-[30rem]">
+
+    <div class="container relative z-1">
+        <div class="grid grid-cols-1 mt-5">
+            <div class="title-heading">
+                <div class="grid md:grid-cols-12 mt-12">
+                    <div class="scrollac lg:col-span-4 md:col-span-6 order-2 lg:order-1 mt-6 md:mt-0 relative">
+                        <div class="rounded-md lg:absolute lg:top-14 lg:bg-white lg: lg:p-6">
+                            <h5 class="mb-3 text-2xl font-bold lg:text-black lg:dark:text-white text-white">Stanley Omezie (ACE)</h5>
+
+                            <p class="para-desc lg:text-slate-400 text-slate-200 dark:text-slate-200 mb-0">
+                                I'm a Computer Programmer.  with over 3 years of experience.</p>
+
+                            <div class="mt-4">
+                                <a href="#portfolio"
+                                   class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Hire
+                                    me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end col-->
+
+                    <div class="lg:col-span-4 lg:block hidden lg:order-2"></div>
+
+                    <div class="scrollac_01 lg:col-span-4 md:col-span-6 order-1 lg:order-3">
+                        <h4
+                                class="lg:text-[64px] lg:leading-[1.1] text-[40px] font-bold lg:text-black lg:dark:text-white text-white mb-0">
+                            Ace Coding <br><span class="typewrite" data-period="2000"
+                                                 data-type='[ "follow Me!"]'></span>
+                        </h4>
+                    </div>
+                    <!--end col-->
+                </div>
+                <!--end grid-->
+            </div>
+        </div>
+        <!--end grid-->
+    </div>
+    <!--end container-->
+
+    <div
+            class="absolute inset-0 bg-gradient-to-b lg:from-[#ecf0f3] lg:to-indigo-600/20 from-indigo-600/10 to-indigo-600 lg:-z-2">
+    </div>
+    <ul class="circles p-0 mb-0">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</section>
+<!--end section-->
+<div class="relative">
+    <div class="absolute block w-full h-auto bottom-[25px] z-1 left-0">
+        <a href="#about">
+            <i
+                class="mdi mdi-arrow-down absolute top-0 left-0 right-0 text-center inline-flex items-center justify-center rounded-full bg-white
+                  h-12 w-12 mx-auto shadow-md "></i></a>
+    </div>
+
+    <div
+            class="shape absolute right-0 sm:-bottom-px -bottom-[2px] left-0 overflow-hidden text-white dark:text-slate-900">
+        <svg class="w-full h-auto" viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="#ecf0f3">
+            </path>
+        </svg>
+    </div>
+</div>
+<!--end section-->
+
+<section class="pt-12">
+    <div class="container">
+        <div class="grid md:grid-cols-6 grid-cols-2 justify-center gap-[30px]">
+            <div class="scrollac mx-auto py-4">
+                <img src="assets/images/client/amazon.svg" class="h-6" alt="">
+            </div>
+
+            <div class="scrollac mx-auto py-4">
+                <img src="assets/images/client/google.svg" class="h-6" alt="">
+            </div>
+
+            <div class="scrollac mx-auto py-4">
+                <img src="assets/images/client/lenovo.svg" class="h-6" alt="">
+            </div>
+
+            <div class="scrollac mx-auto py-4">
+                <img src="assets/images/client/paypal.svg" class="h-6" alt="">
+            </div>
+
+            <div class="scrollac mx-auto py-4">
+                <img src="assets/images/client/shopify.svg" class="h-6" alt="">
+            </div>
+
+            <div class="scrollac mx-auto py-4">
+                <img src="assets/images/client/spotify.svg" class="h-6" alt="">
+            </div>
+        </div>
+        <!--end grid-->
+    </div>
+    <!--end container-->
+</section>
+<!--end section-->
+<!-- End Hero -->
+
+<!-- Start Section-->
+<section class="relative md:py-24 py-16" id="about">
+    <div class="container">
+        <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+            <div class="lg:col-span-5 md:col-span-6">
+                <div class="relative">
+                    <img src=" assets/images/personal/ace.jpg" class="rounded-lg scrollac" alt="">
+
+                </div>
+            </div>
+
+            <div class="scrollac_01 lg:col-span-7 md:col-span-6 mt-8 md:mt-0">
+                <div class="lg:ml-5">
+                    <h6 class="text-[#333] text-base font-bold uppercase mb-2">About Me</h6>
+                    <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Better
+                        Design <br> Better Experience</h3>
+
+                    <p class="text-slate-400 max-w-xl">I'm a Computer Programmer. Experienced in most programming languages like
+                        HTML, PYTHON, JAVA, KOTLIN.</p>
+
+                    <div class="mt-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-slate-400">Python</span>
+                            <span class="text-slate-400">95%</span>
+                        </div>
+                        <div class="w-full bg-gray-100  rounded-full h-[6px]"
+                             style="box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;">
+                            <div class="bg-indigo-600 h-[6px] rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-slate-400">Kotlin</span>
+                            <span class="text-slate-400">90%</span>
+                        </div>
+                        <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]"
+                             style="box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;">
+                            <div class="bg-indigo-600 h-[6px] rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-slate-400">HTML</span>
+                            <span class="text-slate-400">95%</span>
+                        </div>
+                        <div class="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]"
+                             style="box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;">
+                            <div class="bg-indigo-600 h-[6px] rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--grid-->
+    </div>
+    <!--end container-->
+
+    <div class="container md:mt-24 mt-16">
+        <div class="grid grid-cols-1 pb-8 text-center">
+            <h6 class="text-[#333] text-base font-bold uppercase mb-2">Services</h6>
+            <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">What do i offer ?
+            </h3>
+
+            <p class="text-slate-400 max-w-xl mx-auto">My name is Stanley Omezie I'm a Computer Programmer. Experienced
+                with different programming languages.</p>
+        </div>
+        <!--end grid-->
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-6 gap-[30px]">
+            <div class="scrollac p-6 transition duration-500 rounded-2xl mt-6">
+                <div class="w-20 h-20 bg-[#ecf0f3] text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center"
+                     style="box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;">
+                    <i class="uil uil-airplay"></i>
+                </div>
+
+                <div class="content mt-7">
+                    <a href="page-services.html" class="title h5 text-lg font-medium hover:text-indigo-600">UX / UI
+                        Design</a>
+                    <p class="text-slate-400 mt-3">Stanley Omezie web development platform for UI/UX</p>
+
+                    <div class="mt-5">
+                        <a href="page-services.html"
+                           class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read
+                            More <i class="uil uil-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scrollac p-6 transition duration-500 rounded-2xl mt-6"
+                 style="box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;">
+                <div class="w-20 h-20 bg-[#ecf0f3] text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center"
+                     style="box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;">
+                    <i class="uil uil-shutter"></i>
+                </div>
+
+                <div class="content mt-7">
+                    <a href="page-services.html" class="title h5 text-lg font-medium hover:text-indigo-600">App Development</a>
+                    <p class="text-slate-400 mt-3">Stanley Omezie web development platform for IOS and Android Development</p>
+
+                    <div class="mt-5">
+                        <a href="page-services.html"
+                           class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read
+                            More <i class="uil uil-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scrollac p-6  transition duration-500 rounded-2xl mt-6">
+                <div class="w-20 h-20 bg-[#ecf0f3] text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center"
+                     style="box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;">
+                    <i class="uil uil-camera-plus"></i>
+                </div>
+
+                <div class="content mt-7">
+                    <a href="page-services.html"
+                       class="title h5 text-lg font-medium hover:text-indigo-600">Programming</a>
+                    <p class="text-slate-400 mt-3">Stanley Omezie web development platform for Programming</p>
+
+                    <div class="mt-5">
+                        <a href="page-services.html"
+                           class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read
+                            More <i class="uil uil-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scrollac p-6 transition duration-500 rounded-2xl mt-6"
+                 style="box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;">
+                <div class="w-20 h-20 bg-[#ecf0f3] text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center"
+                     style="box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;">
+                    <i class="uil uil-flower"></i>
+                </div>
+
+                <div class="content mt-7">
+                    <a href="page-services.html" class="title h5 text-lg font-medium hover:text-indigo-600">Graphic
+                        Designer</a>
+                    <p class="text-slate-400 mt-3">Stanley Omezie web development platform for Graphic Design</p>
+
+                    <div class="mt-5">
+                        <a href="page-services.html"
+                           class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read
+                            More <i class="uil uil-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scrollac p-6 transition duration-500 rounded-2xl mt-6">
+                <div class="w-20 h-20 bg-[#ecf0f3] text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center"
+                     style="box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;">
+                    <i class="uil uil-cog"></i>
+                </div>
+
+                <div class="content mt-7">
+                    <a href="page-services.html" class="title h5 text-lg font-medium hover:text-indigo-600">Web
+                        Security</a>
+                    <p class="text-slate-400 mt-3">Stanley Omezie web development platform for Web</p>
+
+                    <div class="mt-5">
+                        <a href="page-services.html"
+                           class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read
+                            More <i class="uil uil-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-6 scrollac transition duration-500 rounded-2xl mt-6"
+                 style="box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;">
+                <div class="w-20 h-20 bg-[#ecf0f3] text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center"
+                     style="box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;">
+                    <i class="uil uil-comment"></i>
+                </div>
+
+                <div class="content mt-7">
+                    <a href="page-services.html" class="title h5 text-lg font-medium hover:text-indigo-600">24/7
+                        Support</a>
+                    <p class="text-slate-400 mt-3">We open 24/7</p>
+
+                    <div class="mt-5">
+                        <a href="page-services.html"
+                           class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Read
+                            More <i class="uil uil-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end grid-->
+    </div>
+    <!--end container-->
+</section>
+<!--end section-->
+<!-- End -->
+
+<!-- Start -->
+<section class="relative md:py-24 py-16 bg-[#ecf0f3]">
+    <div class="container">
+        <div class="grid grid-cols-1 pb-8 text-center">
+            <h6 class="text-[#333] text-base font-bold uppercase mb-2">Experience</h6>
+            <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Work Experience
+            </h3>
+
+            <p class="text-slate-400 max-w-xl mx-auto">I am a Computer Programmer. Experienced with Programming languages and more</p>
+        </div>
+        <!--end grid-->
+
+
+
+<!-- Start -->
+<section class="relative md:py-24 py-16" id="portfolio"  >
+    <div class="container">
+        <div class="grid grid-cols-1 pb-8 text-center">
+            <h6 class="text-[#333] text-base font-bold uppercase mb-2">Portfolio</h6>
+            <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Our Works &
+                Projects</h3>
+
+            <p class="text-slate-400 max-w-xl mx-auto">I am a Computer Programmer. Experienced with Programming languages and more</p>
+            </p>
+        </div>
+        <!--end grid-->
+
+        <div class="scrollac grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6 mt-8">
+            <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
+                <img src="assets/images/portfolio/1.jpg"
+                     class="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
+                     alt="">
+                <div class="absolute inset-0 group-hover:bg-dark opacity-50 transition duration-500 z-0"></div>
+
+                <div class="content">
+                    <div
+                            class="icon absolute z-10 hidden group-hover:block top-4 right-4 transition-all duration-500">
+                        <a href="assets/images/portfolio/1.jpg"
+                           class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"><i
+                                class="uil uil-camera"></i></a>
+                    </div>
+
+                    <div class="title absolute z-10 hidden group-hover:block bottom-4 left-4">
+                        <a href="portfolio-detail-one.html"
+                           class="h6 text-md font-medium text-white hover:text-indigo-600 duration-500 ease-in-out">Mockup
+                            Collection</a>
+                        <p class="text-slate-100 tag mb-0">Stanley</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
+                <img src="assets/images/portfolio/2.jpg"
+                     class="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
+                     alt="">
+                <div class="absolute inset-0 group-hover:bg-dark opacity-50 transition duration-500 z-0"></div>
+
+                <div class="content">
+                    <div
+                            class="icon absolute z-10 hidden group-hover:block top-4 right-4 transition-all duration-500">
+                        <a href="assets/images/portfolio/2.jpg"
+                           class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"><i
+                                class="uil uil-camera"></i></a>
+                    </div>
+
+                    <div class="absolute z-10 hidden group-hover:block bottom-4 left-4 transition-all duration-500">
+                        <a href="portfolio-detail-one.html"
+                           class="h6 text-md font-medium text-white hover:text-indigo-600 duration-500 ease-in-out">Mockup
+                            Collection</a>
+                        <p class="text-slate-100 tag mb-0">Stanley</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
+                <img src="assets/images/portfolio/3.jpg"
+                     class="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
+                     alt="">
+                <div class="absolute inset-0 group-hover:bg-dark opacity-50 transition duration-500 z-0"></div>
+
+                <div class="content">
+                    <div
+                            class="icon absolute z-10 hidden group-hover:block top-4 right-4 transition-all duration-500">
+                        <a href="assets/images/portfolio/3.jpg"
+                           class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"><i
+                                class="uil uil-camera"></i></a>
+                    </div>
+
+                    <div class="absolute z-10 hidden group-hover:block bottom-4 left-4 transition-all duration-500">
+                        <a href="portfolio-detail-one.html"
+                           class="h6 text-md font-medium text-white hover:text-indigo-600 duration-500 ease-in-out">Mockup
+                            Collection</a>
+                        <p class="text-slate-100 tag mb-0">Stanley</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
+                <img src="assets/images/portfolio/4.jpg"
+                     class="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
+                     alt="">
+                <div class="absolute inset-0 group-hover:bg-dark opacity-50 transition duration-500 z-0"></div>
+
+                <div class="content">
+                    <div
+                            class="icon absolute z-10 hidden group-hover:block top-4 right-4 transition-all duration-500">
+                        <a href="assets/images/portfolio/4.jpg"
+                           class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"><i
+                                class="uil uil-camera"></i></a>
+                    </div>
+
+                    <div class="absolute z-10 hidden group-hover:block bottom-4 left-4 transition-all duration-500">
+                        <a href="portfolio-detail-one.html"
+                           class="h6 text-md font-medium text-white hover:text-indigo-600 duration-500 ease-in-out">Mockup
+                            Collection</a>
+                        <p class="text-slate-100 tag mb-0">Stanley</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
+                <img src="assets/images/portfolio/5.jpg"
+                     class="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
+                     alt="">
+                <div class="absolute inset-0 group-hover:bg-dark opacity-50 transition duration-500 z-0"></div>
+
+                <div class="content">
+                    <div
+                            class="icon absolute z-10 hidden group-hover:block top-4 right-4 transition-all duration-500">
+                        <a href="assets/images/portfolio/5.jpg"
+                           class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"><i
+                                class="uil uil-camera"></i></a>
+                    </div>
+
+                    <div class="absolute z-10 hidden group-hover:block bottom-4 left-4 transition-all duration-500">
+                        <a href="portfolio-detail-one.html"
+                           class="h6 text-md font-medium text-white hover:text-indigo-600 duration-500 ease-in-out">Mockup
+                            Collection</a>
+                        <p class="text-slate-100 tag mb-0">Stanley</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
+                <img src="assets/images/portfolio/6.jpg"
+                     class="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
+                     alt="">
+                <div class="absolute inset-0 group-hover:bg-dark opacity-50 transition duration-500 z-0"></div>
+
+                <div class="content">
+                    <div
+                            class="icon absolute z-10 hidden group-hover:block top-4 right-4 transition-all duration-500">
+                        <a href="assets/images/portfolio/6.jpg"
+                           class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"><i
+                                class="uil uil-camera"></i></a>
+                    </div>
+
+                    <div class="absolute z-10 hidden group-hover:block bottom-4 left-4 transition-all duration-500">
+                        <a href="portfolio-detail-one.html"
+                           class="h6 text-md font-medium text-white hover:text-indigo-600 duration-500 ease-in-out">Mockup
+                            Collection</a>
+                        <p class="text-slate-100 tag mb-0">Stanley</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
+                <img src="assets/images/portfolio/7.jpg"
+                     class="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
+                     alt="">
+                <div class="absolute inset-0 group-hover:bg-dark opacity-50 transition duration-500 z-0"></div>
+
+                <div class="content">
+                    <div
+                            class="icon absolute z-10 hidden group-hover:block top-4 right-4 transition-all duration-500">
+                        <a href="assets/images/portfolio/7.jpg"
+                           class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"><i
+                                class="uil uil-camera"></i></a>
+                    </div>
+
+                    <div class="absolute z-10 hidden group-hover:block bottom-4 left-4 transition-all duration-500">
+                        <a href="portfolio-detail-one.html"
+                           class="h6 text-md font-medium text-white hover:text-indigo-600 duration-500 ease-in-out">Mockup
+                            Collection</a>
+                        <p class="text-slate-100 tag mb-0">Stanley</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
+                <img src="assets/images/portfolio/8.jpg"
+                     class="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
+                     alt="">
+                <div class="absolute inset-0 group-hover:bg-dark opacity-50 transition duration-500 z-0"></div>
+
+                <div class="content">
+                    <div
+                            class="icon absolute z-10 hidden group-hover:block top-4 right-4 transition-all duration-500">
+                        <a href="assets/images/portfolio/8.jpg"
+                           class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"><i
+                                class="uil uil-camera"></i></a>
+                    </div>
+
+                    <div class="absolute z-10 hidden group-hover:block bottom-4 left-4 transition-all duration-500">
+                        <a href="portfolio-detail-one.html"
+                           class="h6 text-md font-medium text-white hover:text-indigo-600 duration-500 ease-in-out">Mockup
+                            Collection</a>
+                        <p class="text-slate-100 tag mb-0">Stanley</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end grid-->
+    </div>
+    <!--end container-->
+</section>
+
+
+<section class="relative md:py-24 py-16">
+    <div class="container">
+
+        <h6 class="text-[#333] text-base font-bold uppercase mb-2 text-center">Contact Me</h6>
+        <h3 class="text-center mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Have
+            Question ?
+            Get in touch!</h3>
+        <div class="scrollac grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
+
+
+            <div class="text-center px-6 mt-6">
+                <div class="w-20 h-20 bg-[#ecf0f3] text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center  mx-auto"
+                     style="box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;">
+                    <i class="uil uil-phone "></i>
+                </div>
+
+                <div class="content mt-7">
+                    <h5 class="title h5 text-xl font-medium text-[#333]">Phone</h5>
+                    <p class="text-slate-400 mt-3"> My Mobile number </p>
+
+                    <div class="mt-5">
+                        <a href="tel:+2349158256901"
+                           class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">
+                            +2349158256901
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center px-6 mt-6">
+                <div class="w-20 h-20 bg-[#ecf0f3] text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center  mx-auto"
+                     style="box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;">
+                    <i class="uil uil-envelope"></i>
+                </div>
+
+                <div class="content mt-7">
+                    <h5 class="title h5 text-xl font-medium text-[#333]">Email</h5>
+                    <p class="text-slate-400 mt-3">My Email</p>
+
+                    <div class="mt-5">
+                        <a href="szubby10@gmail.com"
+                           class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">szubby10@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center px-6 mt-6">
+                <div class="w-20 h-20 bg-[#ecf0f3] text-indigo-600 rounded-xl text-3xl flex align-middle justify-center items-center  mx-auto"
+                     style="box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;">
+                    <i class="uil uil-map-marker"></i>
+                </div>
+
+                <div class="content mt-7">
+                    <h5 class="title h5 text-xl font-medium text-[#333]">Location</h5>
+                    <p class="text-slate-400 mt-3">Veritas University Abuja <br> Bwari, Abuja</p>
+
+                    <div class="mt-5">
+                        <a href="https://www.google.com/maps/dir//Veritas+University+Abuja,+Hostel+M,+Veritas+University,+Bwari+901101,+Federal+Capital+Territory/@9.2880634,7.4149866,17z/data=!4m11!1m2!2m1!1sveritas+university!4m7!1m0!1m5!1m1!1s0x104ddd355dd5d403:0xda871c1390c7f68a!2m2!1d7.4164072!2d9.2907129?entry=ttu"
+                           data-type="iframe"
+                           class="video-play-icon read-more lightbox btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">
+                            View
+                            on Google map</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end grid-->
+    </div>
+    <!--end container-->
+</section>
+
+
+<!-- Footer Start -->
+<footer class="footer bg-[#ecf0f3] relative text-[#898989] ">
+    <div class="py-[30px] px-0 border-t">
+        <div class="container text-center">
+            <div class="grid md:grid-cols-3 grid-cols-1 items-center">
+                <div class="md:text-left text-center">
+                    <a href="#" class="text-[22px] focus:outline-none">
+                        <img src="assets/images/ac logo.png" class="mx-auto md:mr-auto md:ml-0 w-14" alt="">
+                    </a>
+                </div>
+
+                <div class="text-center mt-6 md:mt-0">
+                    <p class="mb-0">©
+                        <script>document.write(new Date().getFullYear())</script> Stanley's <i
+                                class="mdi mdi-heart text-red-600"></i> Landing <a href="#" target="_blank"
+                                                                              class="text-reset">Page</a>.
+                    </p>
+                </div>
+
+
+                <!--end icon-->
+            </div>
+            <!--end grid-->
+        </div>
+        <!--end container-->
+    </div>
+</footer>
+<!--end footer-->
+<!-- Footer End -->
+
+
+
+<!-- Back to top -->
+<a href="#" onclick="topFunction()" id="back-to-top"
+   class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 right-5 h-9 w-9 text-center bg-indigo-600 text-white leading-9"
+   style="box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;"><i class="uil uil-arrow-up"></i></a>
+<!-- Back to top -->
+
+
+<!-- JAVASCRIPTS -->
+<script src="assets/libs/tobii/js/tobii.min.js"></script>
+<script src="assets/libs/jarallax/jarallax.min.js"></script>
+<script src="assets/libs/feather-icons/feather.min.js"></script>
+<script src="assets/js/plugins.init.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+<script>
+    // animation
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '60px',
+        duration: 2500,
+        delay: 200,
+        reset: true,
+    })
+
+    sr.reveal(`.scrollac`, { delay: 300, origin: 'bottom' });
+    sr.reveal(`.scrollac_01`, { delay: 500, origin: 'bottom' });
+</script>
+    </div>
+</section>
+</body>
+</html>
